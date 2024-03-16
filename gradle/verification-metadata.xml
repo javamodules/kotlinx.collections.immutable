@@ -9,6 +9,7 @@
          <trust group="org.gradle" reason="download over TLS"/>
          <trust group="org.jetbrains.kotlin" reason="specifies verified dependencies"/>
          <trust group="org.jetbrains.kotlin.mulitplatform" reason="specifies verified dependencies"/>
+         <trust file="kotlin-native-prebuilt-linux-x86_64-1.9.23.tar.gz" reason="verified dependencies"/>
          <trust file=".*-javadoc[.]jar" regex="true" reason="javadoc (not included in code)"/>
          <trust file=".*-sources[.]jar" regex="true" reason="sources (not included in code)"/>
          <trust file="^gradle-.*[.]zip$" regex="true" reason="download over TLS"/>
