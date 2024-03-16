@@ -17,6 +17,15 @@ mavenPublicationsPom {
     description.set("Kotlin Immutable Collections multiplatform library")
 }
 
+publishing {
+    repositories {
+        maven {
+            name = "jpms"
+            url = uri(requireNotNull(System.getProperty("jpms.repository")?.ifBlank { null }))
+        }
+    }
+}
+
 kotlin {
     applyDefaultHierarchyTemplate()
     explicitApi()
